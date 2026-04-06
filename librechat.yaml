@@ -1,12 +1,6 @@
 version: 1.3.5
 cache: true
 
-interface:
-  endpointsMenu: true
-  mcpServers:
-    use: true
-    create: true
-
 endpoints:
   custom:
     - name: "ZAI"
@@ -18,15 +12,8 @@ endpoints:
           - "glm-4.7"
           - "glm-4.5-air"
         fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "current_model"
+      summarize: false
       modelDisplayLabel: "GLM Coding"
-
-mcpServers:
-  web-search-prime:
-    type: streamable-http
-    url: "https://api.z.ai/api/mcp/web_search_prime/mcp"
-    headers:
-      Authorization: "Bearer ${ZAI_API_KEY}"
-    timeout: 60000
-    initTimeout: 60000
-    chatMenu: true
-    description: "Z.AI Web Search MCP"
