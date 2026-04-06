@@ -17,3 +17,10 @@ endpoints:
       titleModel: "current_model"
       summarize: false
       modelDisplayLabel: "GLM Coding"
+mcpServers:
+  web-search-prime:
+    type: streamable-http
+    url: "https://api.z.ai/api/mcp/web_search_prime/mcp"
+    headers:
+      Authorization: "Bearer ${ZAI_API_KEY}"
+    description: "Z.AI Web Search MCP"
