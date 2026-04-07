@@ -9,7 +9,7 @@ endpoints:
       models:
         default:
           - "GLM-4.7"
-          - "GLM-5.1"
+          - "glm-5.1"
         fetch: false
       modelDisplayLabel: "GLM Coding"
 
